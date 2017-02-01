@@ -1,4 +1,5 @@
 #!/usr.bin/env python
+"""Demonstrates input."""
 
 answer = raw_input('What is your favorite number?')
 print 'You like', answer, '?'
