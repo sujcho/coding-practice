@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 """Print the decimal equivalent of a binary string that is given by the user:"""
 
 
