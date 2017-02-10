@@ -10,7 +10,7 @@ for digit in input:
     if digit != '0' and digit != '1':
         print "Not a binary number"
         break;
-else:
+    else:
         sum += int(digit) * pow(2,mult)
         mult += 1
 
