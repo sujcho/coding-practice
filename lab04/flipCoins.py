@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 """Write a funciton called "Coin" that emulates the flip of a coin, returning 'heads' or 'tails/ """
+
+#import a randome module
 import random
 
 #Flipping a Coin
