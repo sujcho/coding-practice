@@ -25,7 +25,11 @@ def convertToDigit(str):
             number += ch
     return number
 
-DATA = ("peanut", "salt", "lemonade", "good time", ":10", "Zilch");
+def main():
+    DATA = ("peanut", "salt", "lemonade", "good time", ":10", "Zilch");
 
-for item in DATA:
-    print convertToDigit(item)
+    for item in DATA:
+        print convertToDigit(item)
+
+if __name__ == "__main__":
+    main()
