@@ -1,13 +1,13 @@
 body{
-    background: #ffc;
+    background: #648FAF;
     margin:15px;
 }
 #wrapper {
     /*center */
     margin:0 auto;
-    background:#fff;
+    background:#B0DBC8;
     width:85%;
-    border:3px solid #999;
+    border:3px solid #B0DBC8;
 
 }
 
@@ -16,10 +16,11 @@ body{
 }
 
 #nav{
-    border-top:3px solid #600;
-    border-bottom: 3px solid #600;
+    border-top: 3px solid #648FAF;
+    border-bottom: 3px solid #648FAF;
     font-size:1em;
 }
+
 
 #content{
     padding: 25px;
@@ -27,10 +28,21 @@ body{
     line-height:1.6em;
 }
 
+.section{
+    border-bottom: 3px solid #648FAF;
+}
+
+#footer{
+    font-size:1em;
+    text-align: center;
+}
 /*breakpoint is 780px*/
 @media screen and (max-width: 780px) {
-    body {
-        background: #f66;
+
+
+    .largerImages {
+        width: 70%;
+        max-width: 400px;
     }
 
     #wrapper {
@@ -44,14 +56,13 @@ body{
 }
 /*breakpoint is 480px*/
 @media screen and (max-width: 480px) {
-    body {
-        background: #6f6;
-    }
 
-    .largeImages {
-        width: 90%;
+
+    .largerImages {
+        width: 60%;
         max-width: 400px;
     }
+
 
     #wrapper {
         width: 98%
