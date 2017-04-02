@@ -1,0 +1,63 @@
+body{
+    background: #ffc;
+    margin:15px;
+}
+#wrapper {
+    /*center */
+    margin:0 auto;
+    background:#fff;
+    width:85%;
+    border:3px solid #999;
+
+}
+
+#header{
+    padding:20px;
+}
+
+#nav{
+    border-top:3px solid #600;
+    border-bottom: 3px solid #600;
+    font-size:1em;
+}
+
+#content{
+    padding: 25px;
+    font-size:0.875em;
+    line-height:1.6em;
+}
+
+/*breakpoint is 780px*/
+@media screen and (max-width: 780px) {
+    body {
+        background: #f66;
+    }
+
+    #wrapper {
+        width: 95%
+    }
+
+    #content {
+        font-size: 1.1em;
+    }
+
+}
+/*breakpoint is 480px*/
+@media screen and (max-width: 480px) {
+    body {
+        background: #6f6;
+    }
+
+    .largeImages {
+        width: 90%;
+        max-width: 400px;
+    }
+
+    #wrapper {
+        width: 98%
+    }
+
+    #content {
+        font-size: 1.3em;
+    }
+}
