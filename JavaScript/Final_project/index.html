@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form 1 </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body style='margin:30px'>
+
+<p>Enter Loan Data:</p>
+<div class="row">
+    <fieldset class="form-group">
+        <label class="col-xs-3">Amount of the loan ($)</label>
+        <div class="col-xs-4">
+               <input type="text" class="form-control" name="amountOfLoan" id="amountOfLoan" placeholder="">
+        </div>
+    </fieldset>
+
+    <fieldset class="form-group">
+        <label class="col-xs-3">Annual Interest (%)</label>
+        <div class="col-xs-4">
+            <input type="text" class="form-control" name="annualInterest" id="annualInterest" placeholder="">
+        </div>
+    </fieldset>
+
+    <fieldset class="form-group">
+        <label class="col-xs-3">Repayment Period (years)</label>
+        <div class="col-xs-4">
+            <input type="text" class="form-control" name="repaymentPeriod" id="repaymentPeriod" placeholder="">
+        </div>
+    </fieldset>
+
+    <fieldset class="form-group">
+        <label class="col-xs-3">Zipcode (to find lenders)</label>
+        <div class="col-xs-4">
+            <input type="text" class="form-control" name="zipcode" id="zipcode" placeholder="">
+        </div>
+    </fieldset>
+</div>
+    <p>Approximate Payments:</p>
+
+    <button onclick="calculate()">Calculate</button>
+    <p>Monthly payment $<span id="month_payment"></span></p>
+    <p>Total payment $<span id="total_payment"></span></p>
+    <p>Total interest $<span id="total_interest"></span></p>
+
+    <script src="index.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
