@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang ="en">
+<head>
+    <meta charset ="utf-8">
+    <title>CSS - Assignment 1</title>
+    <meta name="description" content="applying CSS">
+    <meta name="robots" content="noindex">
+    <!-- fixing issue with IE 10, -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="reset.css"/>
+    <link rel="stylesheet" href="mystyles.css"/>
+
+    <link href="https://fonts.googleapis.com/css?family=Courgette|Handlee|Muli" rel="stylesheet">
+    <link rel="stylesheet" href="fonts.css">
+
+    <style>
+        blockquote::before {content:open-quote}
+        blockquote::after {content:close-quote}
+    </style>
+</head>
+
+<body>
+<div id="wrapper">
+    <p style="text-align:center">
+        <img src="images/banner.jpg" alt="a large image banner!" style="max-width:100%; height:auto;" >
+    </p>
+    <div id="header">
+        <h1>Lorem Ipsum</h1>
+        <h2>Assignment2</h2>
+    </div>
+
+    <div id="nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <div id="content">
+        <div class="section">
+            <h3>First Paragraph</h3>
+
+            <img src="images/Anemone.jpg" alt="Tidepool and anemones" class="largerImages">
+            <blockquote>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus dolor sed lacus aliquet, vitae pulvinar arcu iaculis. Duis mattis convallis mi vitae eleifend. Suspendisse at viverra leo. Proin in cursus felis, accumsan aliquam urna. In ut magna non quam bibendum mattis ac porttitor diam. Praesent pretium enim quis magna cursus venenatis. Proin ac urna eu ante commodo sagittis tincidunt quis ante. Curabitur id rutrum nunc, ut condimentum sapien. Vivamus tempus pretium erat, sed aliquet enim tristique in. Pellentesque porta sem ex, in dapibus orci condimentum sit amet.erve & Pillar Point State Marine Conservation Area extend offshore from Montara, just north of Pillar Point. Like underwater parks, these marine protected areas help conserve ocean wildlife and marine ecosystems. Fitzgerald Marine Reserve lies within Montara State Marine Reserve.
+            </blockquote>
+        </div>
+
+        <div class="section2">
+            <h3>Second Paragraph</h3>
+            <img src="images/mosslanding.jpg" alt="View from Bluff Trail Looking down to Frenchmans Reef intertidal Zone" class="centerImage">
+            <div id="left">
+                <p id="first">The site of the current Fitzgerald Marine Reserve was originally settled by Native Americans approximately 5,800 years ago. In 1908, the Ocean Shore Railroad extended through the town of Moss Beach, effectively creating this location as a tourist destination. Remains of the foundation and some original landscape features from the Smith-Doelger homesite from the early-1900s may be found on the bluffs overlooking the Reserve.</p>
+            </div>
+           <div id="right">
+                <p >The site has long been a source of research and materials for marine biologists and collectors, so much so that, in 1969, San Mateo County urged the State of California to designate the site as a state reserve to protect the remaining flora and fauna. On August 5, 1969 the site was officially designated as a state reserve and was named after James V. Fitzgerald, former mayor of San Bruno and a longtime member of the San Mateo County Board of Supervisors.</p>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <p>Copyright &copy; 2017. All rights reserved.</p>
+    </div>
+
+</div>
+</body>
+</html>

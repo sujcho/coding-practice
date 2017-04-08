@@ -8,45 +8,84 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body style='margin:30px'>
+<h1 align="center">Loan Calculator</h1>
+<h4 style="padding-bottom: 1.2em">Enter Loan Data:</h4>
 
-<p>Enter Loan Data:</p>
 <div class="row">
+    <div class="col-md-4">
     <fieldset class="form-group">
-        <label class="col-xs-3">Amount of the loan ($)</label>
-        <div class="col-xs-4">
+        <label class="col-xs-6">Amount of the loan ($)</label>
+        <div class="col-xs-6">
                <input type="text" class="form-control" name="amountOfLoan" id="amountOfLoan" placeholder="">
+               <small class="text-muted" id="msg1"></small>
         </div>
+
     </fieldset>
 
     <fieldset class="form-group">
-        <label class="col-xs-3">Annual Interest (%)</label>
-        <div class="col-xs-4">
+        <label class="col-xs-6">Annual Interest (%)</label>
+        <div class="col-xs-6">
             <input type="text" class="form-control" name="annualInterest" id="annualInterest" placeholder="">
+            <small class="text-muted" id="msg2"></small>
         </div>
     </fieldset>
 
     <fieldset class="form-group">
-        <label class="col-xs-3">Repayment Period (years)</label>
-        <div class="col-xs-4">
+        <label class="col-xs-6">Repayment Period (years)</label>
+        <div class="col-xs-6">
             <input type="text" class="form-control" name="repaymentPeriod" id="repaymentPeriod" placeholder="">
+            <small class="text-muted" id="msg3"></small>
         </div>
     </fieldset>
 
     <fieldset class="form-group">
-        <label class="col-xs-3">Zipcode (to find lenders)</label>
-        <div class="col-xs-4">
+        <label class="col-xs-6">Zipcode (to find lenders)</label>
+        <div class="col-xs-6">
             <input type="text" class="form-control" name="zipcode" id="zipcode" placeholder="">
+            <small class="text-muted" id="msg4"></small>
+            <small class="text-danger" id="msg5"></small>
+
         </div>
     </fieldset>
-</div>
-    <p>Approximate Payments:</p>
+    </div>
+    <div class="col-md-6">
+        <canvas id="chart" width="300" height="200"></canvas>
+    </div>
 
-    <button onclick="calculate()">Calculate</button>
-    <p>Monthly payment $<span id="month_payment"></span></p>
-    <p>Total payment $<span id="total_payment"></span></p>
-    <p>Total interest $<span id="total_interest"></span></p>
+</div>
+<div class="row">
+    <div class="col-md-2">
+        <h4>Approximate Payments:</h4>
+    </div>
+    <div class="col-md-4">
+        <button type="button" class="btn btn-primary" onclick="calculate()">Calculate</button>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <div class="col-xs-6"><p>Monthly payment</p></div>
+        <div class="col-xs-6"><p>$<span id="month_payment"></span></p></div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <div class="col-xs-6"><p>Total payment</p></div>
+        <div class="col-xs-6"><p>$<span id="total_payment"></span></p></div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <div class="col-xs-6"><p>Total interest</p></div>
+        <div class="col-xs-6"><p>$<span id="total_interest"></span></p></div>
+    </div>
+</div>
+
+<h4>Sponsors</h4>
+    <p id ="landers"></p>
 
     <script src="index.js"></script>
-    <script src="script.js"></script>
 </body>
 </html>

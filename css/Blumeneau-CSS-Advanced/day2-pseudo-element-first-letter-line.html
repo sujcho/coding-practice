@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Pseudo-Element for Frist Line and Letter</title>
+	<meta name="description" content="using Pseudo-elements">
+	<meta name="robots" content="noindex">
+	<style>
+		/* CSS Commment */
+		#wrapper {
+			width:75%;
+			margin:20px auto;
+			border:5px double #999;
+			padding:25px;
+		}
+		#right p::first-line {
+			font-weight:bold;
+			font-size:1.5em;
+			color:#009;
+		}
+		p:first-child::first-letter {
+			font-family:Georgia, serif;
+			font-size:500%;
+			float:left;
+			color:#999;
+			margin-top:-30px;
+			padding-right:5px;
+		}
+	</style>
+</head>
+<body>
+<h1>Pseudo-Element - First Line and Letter</h1>
+<div id="wrapper">
+	<div id="left">
+	<p class="firstparagraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent venenatis accumsan nunc et pellentesque. Vivamus eget leo augue. Vivamus nulla ligula, commodo a posuere eu, tincidunt ut quam. Pellentesque in lacinia neque, nec laoreet est. Vivamus non nibh lorem. Mauris eu pharetra purus, nec aliquam diam. Nam fringilla accumsan tortor.</p>
+
+<p>Fusce in eros faucibus, lacinia enim hendrerit, dictum eros. In hac habitasse platea dictumst. Phasellus ac tempus metus. Proin tempor arcu vitae enim maximus condimentum. Sed semper auctor odio laoreet ultrices. Integer gravida imperdiet rhoncus. Nullam non pretium nisi. Integer nec arcu ut ante tempor vulputate vel non diam. Curabitur id faucibus erat. Fusce pretium risus a ligula suscipit, ut pellentesque nulla ullamcorper. Curabitur in pretium leo, nec interdum lorem. Nullam vitae venenatis odio. Donec rutrum varius ipsum, eu consequat metus facilisis et. Praesent nec est suscipit, accumsan augue non, faucibus magna.</p></div>
+	<div id="right">
+	<p>Ut sagittis, dui sit amet cursus bibendum, tortor arcu gravida diam, sed gravida enim elit sit amet nunc. Maecenas a ipsum elit. Nam interdum ligula risus, eu ullamcorper nibh placerat eu. Pellentesque est sem, sollicitudin at est eget, bibendum volutpat neque. Nunc efficitur orci facilisis mauris vulputate sodales. In sed hendrerit lacus, vel tempor sem. Duis tempus diam eget risus dictum, non condimentum tortor condimentum. Nam porttitor bibendum ligula molestie malesuada. Ut vel malesuada nisl, eget gravida velit. Vestibulum ex lorem, eleifend ut tempor id, commodo ac quam. In ultricies non dui a venenatis. Donec a urna molestie, vestibulum tellus quis, maximus tellus. Suspendisse tincidunt viverra mauris, et suscipit magna imperdiet ac. Proin sit amet ex sollicitudin, mattis massa vel, consequat lorem. Curabitur scelerisque, sem in porta hendrerit, lectus diam tempor odio, non ornare neque nibh sit amet orci. Pellentesque sodales ex purus, a cursus lorem laoreet id.</p></div>
+
+</div> <!-- closes wrapper -->
+</body>
+</html>

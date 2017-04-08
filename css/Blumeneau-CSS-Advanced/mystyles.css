@@ -1,0 +1,139 @@
+@font-face {
+    font-family: 'armwrestlerbold';
+    src: url('armwrestler-webfont.woff2') format('woff2'),
+         url('armwrestler-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+	background:#ffc;
+	margin:15px;
+}
+/* img {width: 100%; } */
+.largeImages {
+	float:left; 
+	width:33.33%; 
+	max-width:400px; 
+	height:auto;
+}
+
+#wrapper {
+	margin:0 auto;
+	background:#fff;
+	width:85%;
+	border:3px double #999;
+}
+#header {
+	padding:25px; 
+}
+#nav {
+	border-top:3px solid #600;
+	border-bottom:3px solid #600;
+	font-size:1em;
+}
+#content {
+	padding:25px;
+	font-size:0.875em;
+	line-height: 1.6em;
+}
+/* this is used for the 3-col layout html */
+.container {
+	width:66%; 
+	margin:0 auto;
+	border:1px solid #999;
+}
+.clearfix {clear:both}
+
+/* No breakpoints */ 
+
+#col1 {
+	height:200px;
+	background:#e0a4a4;
+	width:60%;
+	float:left;
+}
+#col2 {
+	height:200px;
+	background:#a4cce0;
+	width:30%;
+	float:left;
+}
+#col3 {
+	height:200px;
+	background:#a4e0a4;
+	width:10%;
+	float:left;
+}
+
+/* breakpoint is 780px; */ 
+@media screen and (max-width:780px) {
+	body {
+		background:#f66;
+	}
+	#wrapper {
+		width:95%
+	}
+	#content {
+		font-size:1.1em;
+	}
+	#col1 {
+		height:200px;
+		background:#e0a4a4;
+		width:65%;
+		float:left;
+	}
+	#col2 {
+		height:200px;
+		background:#a4cce0;
+		width:35%;
+		float:left;
+	}
+	#col3 {
+		height:200px;
+		background:#a4e0a4;
+		width:100%;
+		float:left;
+	}
+}
+/* breakpoint is 480px; */ 
+@media screen and (max-width:480px) {
+	body {
+		background:#6f6;
+	}
+	.largeImages { 
+		width:90%; 
+		max-width:400px; 
+}
+	#wrapper {
+		width:98%
+	}
+	#content {
+		font-size:1.3em;
+	}
+	#col1 {
+		height:200px;
+		background:#e0a4a4;
+		width:100%;
+		float:left;
+	}
+	#col2 {
+		height:200px;
+		background:#a4cce0;
+		width:100%;
+		float:left;
+	}
+	#col3 {
+		height:200px;
+		background:#a4e0a4;
+		width:100%;
+		float:left;
+	}
+}
+
+
+
+
+
+

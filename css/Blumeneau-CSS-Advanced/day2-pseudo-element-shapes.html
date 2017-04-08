@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Pseudo-Element for Shapes</title>
+	<meta name="description" content="using Pseudo-elements">
+	<meta name="robots" content="noindex">
+	<style>
+		#square {
+			width:100px;
+			height:100px;
+			background:blue;
+			margin-bottom:30px;
+		}
+		#triangle-up {
+			width:0;
+			height:0;
+			border-left:50px solid transparent;
+			border-right:50px solid transparent;
+			border-bottom:100px solid red;
+			margin-bottom:30px;
+		}
+		#triangle-topleft {
+			width:0;
+			height:0;
+			border-top:100px solid red;
+			border-right:100px solid transparent;
+			margin-bottom:30px;
+		}
+		#star-six {
+			width:0;
+			height:0;
+			border-left:50px solid transparent;
+			border-right:50px solid transparent;
+			border-bottom:100px solid red;
+			position:relative;
+		}
+		#star-six::after {
+			width:0;
+			height:0;
+			border-left:50px solid transparent;
+			border-right:50px solid transparent;
+			border-top:100px solid red;
+			position:absolute;
+			content:"";
+			top:30px;
+			left:-50px;
+		}
+	</style>
+</head>
+<body>
+<h1>Pseudo-Element - Shapes</h1>
+<div id="square"></div>
+<div id="triangle-up"></div>
+<div id="triangle-topleft"></div>
+<div id="star-six"></div>
+
+
+</body>
+</html>
