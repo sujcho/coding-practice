@@ -55,7 +55,7 @@ body{
 
 .centerImage{
     position:absolute;
-    top:205%;
+    top:190%;
     left:51%;
     margin-left:-200px;
     width: 60%;
@@ -64,7 +64,6 @@ body{
 }
 /*breakpoint is 780px*/
 @media screen and (max-width: 780px) {
-
 
     .largerImages {
         width: 70%;
