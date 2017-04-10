@@ -22,6 +22,7 @@ var routes = Routes{
 		"/",
 		Index,
 	},
+	//Retrieve the data
 	Route{
 		"TodoIndex",
 		"GET",
@@ -33,6 +34,13 @@ var routes = Routes{
 		"GET",
 		"/todos/{todoId}",
 		TodoShow,
+	},
+	//posting JSON
+	Route{
+		"TodoCreate",
+		"POST",
+		"/todos",
+		TodoCreate,
 	},
 }
 
