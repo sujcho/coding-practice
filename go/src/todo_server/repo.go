@@ -15,6 +15,8 @@ func RepoFindTodo(id int) Todo {
 	return Todo{}
 
 }
+
+//create id
 func RepoCreateTodo(t Todo) Todo {
 	currentId += 1
 	t.Id = currentId
