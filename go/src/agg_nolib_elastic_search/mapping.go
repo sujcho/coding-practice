@@ -5,8 +5,8 @@ import (
 	"net/http"
 )
 
-func RequestMapping() {
-	client := &http.Client{}
+func RequestMapping(client *http.Client) {
+	//client := &http.Client{}
 
 	var URL string = "http://localhost:9200/dev_nanodemoxxx1_traffic_logs/kafka/_mapping"
 

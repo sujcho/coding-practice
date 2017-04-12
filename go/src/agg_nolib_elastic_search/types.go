@@ -18,12 +18,6 @@ type Input struct {
 }
 type Inputs []Input
 
-type AggResult struct {
-	Agg AggData `json:"aggregations"`
-	//Name string
-}
-type AggData map[string]interface{}
-
 type Entry struct {
 	Key   string `json:"key"`
 	Count int    `json:"doc_count"`
