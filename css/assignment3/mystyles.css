@@ -82,6 +82,8 @@ dt img {
     .gallery{
         width:60%;
         max-width: 300px;
+        margin-left:40px;
+        margin-right:40px;
     }
 
     #wrapper {
@@ -89,8 +91,19 @@ dt img {
     }
 
     #content {
+        margin-top: 500px;
         font-size: 1.1em;
     }
+
+    dl {
+        position:relative;
+        width:453px;
+        top:50px;
+        padding:0 0 0 0;
+    }
+    #one img{top:0px;}
+    #two img{top:0px; left:300px}
+    #three img{top:230px; left:-5px}
 
 }
 /*breakpoint is 480px*/
@@ -103,7 +116,7 @@ dt img {
     }
 
     .gallery{
-        width:50%;
+        width:60%;
         max-width: 200px;
     }
 
@@ -112,6 +125,17 @@ dt img {
     }
 
     #content {
+        margin-top: 600px;
         font-size: 1.3em;
     }
+
+    dl {
+        position:relative;
+        width:453px;
+        top:50px;
+        padding:0 0 0 0;
+    }
+    #one img{top:0px;}
+    #two img{top:200px; left:-10px}
+    #three img{top:400px; left:-10px}
 }
