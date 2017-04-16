@@ -1,0 +1,54 @@
+ @font-face {
+    font-family: 'armwrestlerbold';
+    src: url('fonts/armwrestler-webfont.woff2') format('woff2'),
+         url('fonts/armwrestler-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'advent_proregular';
+    src: url('fonts/adventpro-regular-webfont.woff2') format('woff2'),
+         url('fonts/adventpro-regular-webfont.woff') format('woff');
+    font-weight: normal;
+	font-style: normal;
+
+}
+@font-face {
+	font-family: 'latoblack';
+	src: url('lato-black.woff2') format('woff2'),
+	url('lato-black.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+@font-face {
+	font-family: 'latobold';
+	src: url('lato-bold.woff2') format('woff2'),
+	url('lato-bold.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+/* Main Styles begin here */
+
+img {
+	border-radius: 8px;
+}
+h1 {
+	font-family:'armwrestlerbold', "Arial Black", sans-serif;
+	text-shadow: 1px 1px 2px #637cbc;
+}
+p {
+	font-family: 'latoblack', sans-serif;
+}
+#first::first-letter {
+	font-family: 'latoblack', sans-serif;
+	font-size: 200%; float: left; color: gray;
+}
+blockquote {
+ 	font-family: 'latoblack', cursive;
+ 	font-size:1.3em;
+}
+
