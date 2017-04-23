@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Information</title>
+    <link rel="stylesheet" media="screen" href="form.css" >
+</head>
+<body>
+<div id="wrapper">
+<h1>Order Information</h1>
+<form name="orderForm" id="orderForm" method="post" action="">
+    <fieldset id="product">
+        <legend><span>Product Information</span></legend>
+        <ol>
+            <li><label for="productType">Product: <br></label>
+                <select id="productType">
+                    <option value="cats">For cats</option>
+                    <option value="dogs">For dogs</option>
+                </select>
+            </li>
+            <li><label>Color: <br></label>
+                <input type="radio" name="color" value="black"> Black<br>
+                <input type="radio" name="color" value="red"> Red<br>
+                <input type="radio" name="color" value="blue"> Blue<br>
+            </li>
+            <li><label>Size:<br></label>
+                <select id="size">
+                    <option value="xsmall">x small</option>
+                    <option value="small">small</option>
+                    <option value="medium">medium</option>
+                    <option value="large">large</option>
+                </select>
+
+            </li>
+        </ol>
+    </fieldset>
+    <fieldset id="contact">
+        <legend><span>Contact Information</span></legend>
+        <ol>
+            <li><label for="name">Name: </label>
+                <input type="text" name="name" id="name" class="text">
+            </li>
+            <li><label for="email">Email: </label>
+                <input type="email" name="email" id="email" class="text">
+            </li>
+            <li><label for="phone">Phone: </label>
+                <input type="text" name="phone" id="phone" class="text">
+            </li>
+        </ol>
+    </fieldset>
+    <fieldset id="delivery">
+        <legend><span>Delivery Address</span></legend>
+
+        <ol>
+            <li> <label for="address">Address 1: <br></label>
+                <input type="text" name="address" id="address" class="text"></li>
+            <li>
+                <label for="address2">Address 2: <br></label>
+                <input type="text" name="address2" id="address2" class="text">
+            </li>
+            <li>
+                <label for="City">City: <br></label>
+                <input type="text" name="City" id="City" class="text">
+            </li>
+            <li>
+                <label for="ZipCode">Zip Code: <br></label>
+                <input type="text" name="ZipCode" id="ZipCode" class="text">
+            </li>
+            <li>
+                <label for="country">Country: <br></label>
+                <input type="text" name="country" id="country" class="text">
+            </li>
+            <li>
+                <label for="comments">Comments:<br></label>
+                <textarea rows="5" cols="21" id="comments"></textarea>
+            </li>
+        </ol>
+    </fieldset>
+    <fieldset class="submit">
+        <legend></legend>
+        <div><input type="submit" name="button" id="button" value="Submit" class="submit"></div>
+    </fieldset>
+</form>
+</div>
+</body>
+</html>

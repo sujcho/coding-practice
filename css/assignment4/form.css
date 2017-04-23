@@ -1,0 +1,105 @@
+body {
+    font:14px/21px "Lucida Sans", sans-serif;
+}
+#orderForm{
+    margin-left:auto;
+    margin-right:auto;
+    max-width: 500px;
+    background: #F8F8F8;
+    padding: 30px 30px 20px 30px;
+    font: 12px Arial, Helvetica, sans-serif;
+    color: #666;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+h1 {
+    font: 24px "Trebuchet MS", Arial, Helvetica, sans-serif;
+    padding: 20px 0px 20px 40px;
+    display: block;
+    margin: -30px -30px 10px -30px;
+    text-shadow: 1px 1px 1px #949494;
+    border-radius: 5px 5px 0px 0px;
+    -webkit-border-radius: 5px 5px 0px 0px;
+    -moz-border-radius: 5px 5px 0px 0px;
+    text-align:center;
+
+}
+#product{
+    background: #F7D6CB;
+}
+#contact{
+    background: #DEC8E0;
+}
+#delivery{
+    background: #C3BAEA;
+}
+.submit{
+    background: #C596D9;
+}
+input[type="text"], input[type="email"], textarea, select {
+    color: #555;
+    height: 30px;
+    line-height:15px;
+    width: 90%;
+    padding: 0px 0px 0px 10px;
+    margin-top: 2px;
+    border: 1px solid #E5E5E5;
+    background: #FBFBFB;
+    outline: 0;
+    -webkit-box-shadow: inset 1px 1px 2px rgba(238, 238, 238, 0.2);
+    box-shadow: inset 1px 1px 2px rgba(238, 238, 238, 0.2);
+    font: normal 14px/14px Arial, Helvetica, sans-serif;
+}
+textarea{
+    height:100px;
+    padding-top: 10px;
+}
+
+input#button.submit {
+background:#68b12f;
+background:-webkit-linear-gradient(top, #68b12f, #50911e);
+background:-moz-linear-gradient(top, #68b12f, #50911e);
+background:-ms-linear-gradient(top, #68b12f, #50911e);
+background:linear-gradient(top, #68b12f, #50911e);
+border:1px solid #509111;
+border-bottom:1px solid #5b992b;
+border-radius:3px;
+box-shadow:inset 0 1px 0 0 #9fd574;
+color:#fff;
+font-weight:bold;
+text-align:center;
+text-shadow:0 -1px 0 #396715;
+padding:6px 20px;
+}
+input#button.submit:hover, input#button.submit:focus {
+    opacity:.85;
+    cursor:pointer;
+}
+input#button.submit:active {
+    border:1px solid #20911e;
+    box-shadow:0 0 10px 5px #356b0b inset;
+}
+
+/* breakpoint is 780px; */
+@media screen and (max-width:780px) {
+    #wrapper {
+        width:95%;
+    }
+    #orderForm{
+        font-size:1.1em;
+    }
+}
+/* breakpoint is 480px; */
+@media screen and (max-width:480px) {
+
+    #wrapper {
+        width:98%;
+    }
+    #orderForm{
+        font-size:1.3em;
+    }
+
+}
+
+
