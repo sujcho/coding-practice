@@ -1,0 +1,14 @@
+{
+  "name": "simple_npm",
+  "version": "1.0.4",
+  "description": "a simple package for checking a word in collection",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "word"
+  ],
+  "author": "Sujin Emily Cho <chosujin84@gmail.com>",
+  "license": "ISC"
+}
